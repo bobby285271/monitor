@@ -30,6 +30,7 @@ app_dependencies = [
     dependency('gee-0.8'),
     dependency('gio-2.0'),
     dependency('gobject-2.0'),
+    dependency('libcurl'),
     dependency('libgtop-2.0'),
     dependency('libwnck-3.0'),
     dependency('libhandy-1', version: '>=0.90.0'),
@@ -46,7 +47,6 @@ app_dependencies = [
     meson.get_compiler('c').find_library('X11'),
     meson.get_compiler('vala').find_library('libxnvctrl', dirs: vapidir),
     meson.get_compiler('vala').find_library('libcurl', dirs: vapidir),
-    meson.get_compiler('c').find_library('libcurl', dirs: vapidir),
 ]
 
 
